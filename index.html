@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PhotoDrop</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #08090d;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    .header {
+      text-align: center;
+      padding: 35px 0 30px;
+    }
+
+    .logo {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+
+    .logo span {
+      color: #4f8cff;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      color: #858b98;
+      font-size: 15px;
+    }
+
+    /* PHOTO CARD */
+
+    .photo-card {
+      width: 100%;
+      max-width: 650px;
+      margin: auto;
+
+      background: #111318;
+
+      border: 1px solid #252a34;
+      border-radius: 24px;
+
+      padding: 18px;
+    }
+
+    /* IMAGE */
+
+    .image-box {
+      width: 100%;
+
+      background: #08090d;
+
+      border: 1px solid #252a34;
+      border-radius: 17px;
+
+      overflow: hidden;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-box img {
+      display: block;
+
+      width: 100%;
+      height: auto;
+
+      max-height: 70vh;
+
+      object-fit: contain;
+    }
+
+    /* FILE INFO */
+
+    .info {
+      padding: 18px 4px 5px;
+    }
+
+    .file-name {
+      font-size: 18px;
+      font-weight: 700;
+
+      word-break: break-word;
+    }
+
+    .file-type {
+      color: #737987;
+      font-size: 13px;
+
+      margin-top: 7px;
+    }
+
+    /* DOWNLOAD BUTTON */
+
+    .download {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      height: 54px;
+
+      margin-top: 15px;
+
+      background: #4f8cff;
+      color: #ffffff;
+
+      border-radius: 14px;
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      transition: 0.2s ease;
+    }
+
+    .download:hover {
+      background: #3d7df5;
+      transform: translateY(-1px);
+    }
+
+    .download:active {
+      transform: translateY(0);
+    }
+
+    /* FOOTER */
+
+    .footer {
+      text-align: center;
+
+      color: #4f5561;
+
+      font-size: 12px;
+
+      margin-top: 22px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 14px;
+      }
+
+      .header {
+        padding: 25px 0 22px;
+      }
+
+      .logo {
+        font-size: 35px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .photo-card {
+        padding: 12px;
+        border-radius: 20px;
+      }
+
+      .image-box {
+        border-radius: 14px;
+      }
+
+      .image-box img {
+        max-height: 65vh;
+      }
+
+      .file-name {
+        font-size: 16px;
+      }
+
+      .download {
+        height: 52px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+      <div class="logo">
+        Photo<span>Drop</span>
+      </div>
+
+      <div class="subtitle">
+        Original quality photo sharing
+      </div>
+
+    </header>
+
+
+    <!-- PHOTO CARD -->
+
+    <main class="photo-card">
+
+      <!-- PHOTO -->
+
+      <div class="image-box">
+
+        <img
+          src="assets/Picsart_26-08-14_23-03-26-986.png"
+          alt="Shared Photo"
+        >
+
+      </div>
+
+
+      <!-- FILE INFORMATION -->
+
+      <div class="info">
+
+        <div class="file-name">
+          Picsart_26-08-14_23-03-26-986.png
+        </div>
+
+        <div class="file-type">
+          PNG • Original Quality
+        </div>
+
+      </div>
+
+
+      <!-- DOWNLOAD -->
+
+      <a
+        class="download"
+        href="assets/Picsart_26-08-14_23-03-26-986.png"
+        download="Picsart_26-08-14_23-03-26-986.png"
+      >
+        ⬇ Download Photo
+      </a>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+      PhotoDrop • No compression
+    </div>
+
+  </div>
+
+</body>
+</html>
