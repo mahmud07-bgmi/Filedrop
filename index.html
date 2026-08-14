@@ -13,25 +13,33 @@
       box-sizing: border-box;
     }
 
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+    }
+
     body {
       min-height: 100vh;
       background: #08090d;
-      color: #ffffff;
+      color: #fff;
       font-family: Arial, Helvetica, sans-serif;
-      padding: 20px;
+      padding: 20px 14px;
     }
 
     .container {
       width: 100%;
-      max-width: 900px;
+      max-width: 700px;
       margin: auto;
     }
 
-    /* HEADER */
+    /* =========================
+       HEADER
+    ========================= */
 
     .header {
       text-align: center;
-      padding: 35px 0 30px;
+      padding: 35px 0 28px;
     }
 
     .logo {
@@ -50,12 +58,12 @@
       font-size: 15px;
     }
 
-    /* PHOTO CARD */
+    /* =========================
+       CARD
+    ========================= */
 
     .photo-card {
       width: 100%;
-      max-width: 650px;
-      margin: auto;
 
       background: #111318;
 
@@ -65,7 +73,9 @@
       padding: 18px;
     }
 
-    /* IMAGE */
+    /* =========================
+       IMAGE
+    ========================= */
 
     .image-box {
       width: 100%;
@@ -93,7 +103,9 @@
       object-fit: contain;
     }
 
-    /* FILE INFO */
+    /* =========================
+       FILE INFORMATION
+    ========================= */
 
     .info {
       padding: 18px 4px 5px;
@@ -103,17 +115,22 @@
       font-size: 18px;
       font-weight: 700;
 
+      line-height: 1.4;
+
       word-break: break-word;
     }
 
     .file-type {
-      color: #737987;
-      font-size: 13px;
-
       margin-top: 7px;
+
+      color: #737987;
+
+      font-size: 13px;
     }
 
-    /* DOWNLOAD BUTTON */
+    /* =========================
+       DOWNLOAD BUTTON
+    ========================= */
 
     .download {
       display: flex;
@@ -127,7 +144,7 @@
       margin-top: 15px;
 
       background: #4f8cff;
-      color: #ffffff;
+      color: #fff;
 
       border-radius: 14px;
 
@@ -148,7 +165,9 @@
       transform: translateY(0);
     }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================= */
 
     .footer {
       text-align: center;
@@ -160,12 +179,14 @@
       margin-top: 22px;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 600px) {
 
       body {
-        padding: 14px;
+        padding: 14px 12px;
       }
 
       .header {
@@ -182,6 +203,7 @@
 
       .photo-card {
         padding: 12px;
+
         border-radius: 20px;
       }
 
@@ -208,7 +230,9 @@
 
   <div class="container">
 
-    <!-- HEADER -->
+    <!-- =========================
+         HEADER
+    ========================== -->
 
     <header class="header">
 
@@ -223,16 +247,19 @@
     </header>
 
 
-    <!-- PHOTO CARD -->
+    <!-- =========================
+         PHOTO CARD
+    ========================== -->
 
     <main class="photo-card">
 
-      <!-- PHOTO -->
+
+      <!-- IMAGE -->
 
       <div class="image-box">
 
         <img
-          src="assets/Picsart_26-08-14_23-03-26-986.png"
+          src="/Filedrop/assets/Picsart_26-08-14_23-03-26-986.png"
           alt="Shared Photo"
         >
 
@@ -254,15 +281,16 @@
       </div>
 
 
-      <!-- DOWNLOAD -->
+      <!-- DOWNLOAD BUTTON -->
 
       <a
         class="download"
-        href="assets/Picsart_26-08-14_23-03-26-986.png"
+        href="/Filedrop/assets/Picsart_26-08-14_23-03-26-986.png"
         download="Picsart_26-08-14_23-03-26-986.png"
       >
-        ⬇ Download Photo
+        ↓ Download Photo
       </a>
+
 
     </main>
 
@@ -272,6 +300,7 @@
     <div class="footer">
       PhotoDrop • No compression
     </div>
+
 
   </div>
 
